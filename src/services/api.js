@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:8080/api";
+const API_BASE_URL = "https://exam-management-backend-4g4y.onrender.com/api";
 
 // 1. Signup API
 export const registerUser = async (userData) => {
