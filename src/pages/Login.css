@@ -1,0 +1,143 @@
+/* ==========================================================
+   Login Page - Modern Unique & Responsive UI Theme
+   ================================================---------- */
+
+:root {
+    --primary-color: #4f46e5;      /* Vibrant Indigo */
+    --primary-hover: #4338ca;
+    --bg-main: #f8fafc;            /* Soft light background */
+    --card-bg: #ffffff;
+    --text-main: #1e293b;          /* Dark slate for high contrast */
+    --text-muted: #64748b;
+    --border-color: #cbd5e1;
+    --danger-color: #ef4444;       /* Modern Red for errors */
+    --danger-bg: #fef2f2;
+    --shadow-md: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+    --transition: all 0.25s ease-in-out;
+}
+
+.login-container {
+    max-width: 420px;
+    margin: 50px auto;
+    padding: 35px;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    background: var(--card-bg);
+    box-shadow: var(--shadow-md);
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+.login-title {
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--text-main);
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.login-error {
+    color: var(--danger-color);
+    background-color: var(--danger-bg);
+    border: 1px solid #fecaca;
+    padding: 10px 14px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.login-form-group {
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.login-form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.login-input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-top: 4px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    box-sizing: border-box;
+    transition: var(--transition);
+    font-size: 14px;
+}
+
+.login-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    background-color: var(--card-bg);
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1);
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px 20px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.25);
+    margin-top: 5px;
+}
+
+.login-button:hover {
+    background: var(--primary-hover);
+    transform: translateY(-1px);
+}
+
+.login-switch-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+.login-switch-link {
+    color: var(--primary-color);
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.login-switch-link:hover {
+    text-decoration: underline;
+    color: var(--primary-hover);
+}
+
+
+/* ==========================================================
+   MOBILE & TABLET RESPONSIVENESS (Phone ke hisab se setting)
+   ================================================---------- */
+
+@media screen and (max-width: 480px) {
+    .login-container {
+        margin: 20px 15px;
+        padding: 22px;
+        border-radius: 14px;
+    }
+
+    .login-title {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+}
