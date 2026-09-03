@@ -23,6 +23,15 @@ export default function App() {
         setIsRegistering(false);
     };
 
+    // Navbar ke Login click par Login Form dikhane ke liye
+    const handleShowLogin = () => {
+        setUser(null);
+        setExam(null);
+        setQuestions([]);
+        setResult(null);
+        setIsRegistering(false);
+    };
+
     // Helper function to render the correct page content based on app state
     const renderContent = () => {
         if (!user) {
@@ -73,7 +82,7 @@ export default function App() {
     return (
         <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', backgroundColor: '#f8fafc' }}>
             {/* Designer Header with 3-line mobile menu box */}
-            <Navbar user={user} onLogout={handleLogout} />
+            <Navbar user={user} onLogout={handleLogout} onLoginClick={handleShowLogin} />
 
             {/* Main Dynamic Content Area */}
             <main style={{ flex: 1, width: '100%' }}>
