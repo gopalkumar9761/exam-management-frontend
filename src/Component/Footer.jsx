@@ -28,7 +28,7 @@ export default function Footer() {
                     {/* GitHub & LinkedIn Links */}
                     <div className="footer-socials">
                         <a 
-                            href="https://github.com" 
+                            href="https://https://github.com/gopalkumar9761" 
                             target="_blank" 
                             rel="noopener noreferrer" 
                             aria-label="GitHub"
@@ -39,7 +39,7 @@ export default function Footer() {
                             </svg>
                         </a>
                         <a 
-                            href="https://linkedin.com" 
+                            href="https://https://www.linkedin.com/in/gopal-kumar-48ab20430/" 
                             target="_blank" 
                             rel="noopener noreferrer" 
                             aria-label="LinkedIn"
