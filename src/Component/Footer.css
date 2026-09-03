@@ -99,6 +99,10 @@
     font-size: 10px;
 }
 
+.desktop-only {
+    display: none;
+}
+
 .footer-links a {
     color: #cbd5e1;
     text-decoration: none;
@@ -111,6 +115,32 @@
     text-shadow: 0 0 8px rgba(56, 189, 248, 0.4);
 }
 
+/* Social Icons Styling */
+.footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.social-icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #cbd5e1;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.social-icon-btn:hover {
+    color: #38bdf8;
+    transform: translateY(-2px);
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+}
+
 /* Desktop Screen Layout */
 @media screen and (min-width: 768px) {
     .footer-container {
@@ -121,5 +151,9 @@
     
     .footer-right {
         gap: 16px;
+    }
+
+    .desktop-only {
+        display: inline;
     }
 }
