@@ -1,8 +1,16 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 
-export default function Navbar({ user, onLogout }) {
+export default function Navbar({ user, onLogout, onLoginClick }) {
     const [menuOpen, setMenuOpen] = useState(false);
+
+    const handleLoginClick = (e) => {
+        e.preventDefault(); // Page reload hone se rokne ke liye
+        if (onLoginClick) {
+            onLoginClick();
+        }
+        setMenuOpen(false);
+    };
 
     return (
         <header className="site-header">
@@ -28,7 +36,9 @@ export default function Navbar({ user, onLogout }) {
                             Logout
                         </button>
                     ) : (
-                        <a href="/login" className="nav-login-link" onClick={() => setMenuOpen(false)}>Login</a>
+                        <a href="#login" className="nav-login-link" onClick={handleLoginClick}>
+                            Login
+                        </a>
                     )}
                 </nav>
             </div>
