@@ -29,7 +29,7 @@ export default function Navbar({ user, onLogout, onLoginClick }) {
                 {/* Navigation Links */}
                 <nav className={`nav-links ${menuOpen ? 'active' : ''}`}>
                     <a href="/" onClick={() => setMenuOpen(false)}>Home</a>
-                    <a href="/about" onClick={() => setMenuOpen(false)}>About</a>
+                    
                     
                     {user ? (
                         <button onClick={() => { onLogout(); setMenuOpen(false); }} className="nav-logout-btn">
